@@ -1,98 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>John Daryl Cabanban Portfolio</title>
-  
-</head>
-<body>
-
-  <aside>
-    <img src="images/alex_profile.jpg" alt="John Daryl Cabanban" />
-    <h1>John Daryl Cabanban</h1>
-    <p>Software Developer | UI/UX Enthusiast | Tech Learner</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </aside>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm John Daryl Cabanban, a software developer passionate about front-end technologies and creating user-focused experiences. I'm always eager to learn and grow my tech skills.</p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Diploma Computer Technology, University of Norther Philipines (2020-2024)</li>
-        <li>High School Diploma, Central City High School (2016-2020)</li>
-      </ul>
-    </section>
-
-    <section id="work">
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Junior Web Developer</strong> at Creative Solutions (2024-Present): Building responsive websites and improving UX design.</li>
-        <li><strong>Intern</strong> at Innovate Tech (Summer 2023): Assisted with software testing and code reviews.</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5, CSS3, JavaScript (ES6+)</li>
-        <li>React, Vue.js</li>
-        <li>UI/UX Design & Figma</li>
-        <li>Python & Django basics</li>
-        <li>Git & GitHub version control</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/280x150.png?text=Project+Alpha" alt="Project Alpha Screenshot" />
-          <h3>Project Alpha</h3>
-          <p>An interactive web app for managing tasks with drag-and-drop and real-time sync.</p>
-          <a href="https://github.com/alexmorgan/project-alpha" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/280x150.png?text=Project+Beta" alt="Project Beta Screenshot" />
-          <h3>Project Beta</h3>
-          <p>A responsive portfolio website built with React and Styled Components.</p>
-          <a href="https://github.com/alexmorgan/project-beta" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/280x150.png?text=Project+Gamma" alt="Project Gamma Screenshot" />
-          <h3>Project Gamma</h3>
-          <p>A Python tool to automate data parsing and generate insightful reports.</p>
-          <a href="https://github.com/alexmorgan/project-gamma" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <ul>
-        <li>Phone: <a href="tel:+1234567890">+09056954099</a></li>
-        <li>Email: <a href="mailto:alexmorgan@example.com">cabanbandaryl20@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/alexmorgan" target="_blank">github.com/alexmorgan</a></li>
-        <li>tiktok: <a href="https://www.tiktok.com/@darylcabanban?_t=ZS-907qr4a7BPI&_r=1" target="_blank">https://www.tiktok.com/@darylcabanban?_t=ZS-907qr4a7BPI&_r=1</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Alex Morgan. All rights reserved.
-  </footer>
-
-</body>
-</html>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    header h1 {
+      margin: 0.3rem 0 0.1rem;
+      font-size: 2rem;
+      color: #222;
+    }
+    header p {
+      margin: 0;
+      font-style: italic;
+      color: #555;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 0.3rem;
+      color: #0077b6;
+    }
+    ul {
+      padding-left: 1.4rem;
+      list-style-type: disc;
+    }
+    .projects div {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .project-title {
+      margin: 0 0 0.4rem 0;
+      font-weight: bold;
+      color: #004a75;
+    }
+    .project-description {
+      margin: 0 0 0.6rem 0;
+      color: #555;
+    }
+    .project-link {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 600;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+    a {
+      color: #0077b6;
+    }
+  </style>
